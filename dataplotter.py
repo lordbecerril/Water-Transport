@@ -97,22 +97,22 @@ def main():
 
     # Handling run1 data
     print("Plotting data from run1----------------------")
-    dataplotter('./run1/EARTHMOO.aei','./run1/JUPITER.aei',"./run1/earthmoo.eps","./run1/jupiter.eps","./run1/together.eps")
+    dataplotter('./run1/EARTHMOO.aei','./run1/JUPITER.aei',"./run1/earthmoo.png","./run1/jupiter.png","./run1/together.png")
     print(" ")
 
     # Handling run2 data
     print("Plotting data from run2----------------------")
-    dataplotter('./run2/EARTHMOO.aei','./run2/JUPITER.aei',"./run2/earthmoo.eps","./run2/jupiter.eps","./run2/together.eps")
+    dataplotter('./run2/EARTHMOO.aei','./run2/JUPITER.aei',"./run2/earthmoo.png","./run2/jupiter.png","./run2/together.png")
     print(" ")
 
     # Handling run3 data
     print("Plotting data from run3----------------------")
-    dataplotter('./run3/EARTHMOO.aei','./run3/JUPITER.aei',"./run3/earthmoo.eps","./run3/jupiter.eps","./run3/together.eps")
+    dataplotter('./run3/EARTHMOO.aei','./run3/JUPITER.aei',"./run3/earthmoo.png","./run3/jupiter.png","./run3/together.png")
     print(" ")
 
     # Handling run4 data
     print("Plotting data from run4----------------------")
-    dataplotter('./run4/EARTHMOO.aei','./run4/JUPITER.aei',"./run4/earthmoo.eps","./run4/jupiter.eps","./run4/together.eps")
+    dataplotter('./run4/EARTHMOO.aei','./run4/JUPITER.aei',"./run4/earthmoo.png","./run4/jupiter.png","./run4/together.png")
     print(" ")
 
 
