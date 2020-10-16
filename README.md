@@ -116,8 +116,8 @@ Initial conditions for JUPITER are:
 | 5.20336          | 0.0           | 0.0   |  259.536     |  100.464   |  34.351|0.000955|
 
 Graphs of Eccentricity vs. Time <br/>
-![Earthmoo](./run4/earthmoo.png)
+![Earthmoo](./run_5/earthmoo.png)
 <br/>
-![Jupiter](./run4/jupiter.png)
+![Jupiter](./run_5/jupiter.png)
 <br/>
-![together](./run4/together.png)
+![together](./run_5/together.png)
