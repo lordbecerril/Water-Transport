@@ -91,7 +91,7 @@ def dataplotter(earthmoo, jupiter, earthplot, jupiterplot, togetherplot):
 
 def main():
     print("Hello World From dataplotter.py ")
-
+    '''
     # Handling run1 data
     print("Plotting data from run1----------------------")
     dataplotter('./run1/EARTHMOO.aei','./run1/JUPITER.aei',"./run1/earthmoo.png","./run1/jupiter.png","./run1/together.png")
@@ -112,11 +112,23 @@ def main():
     dataplotter('./run4/EARTHMOO.aei','./run4/JUPITER.aei',"./run4/earthmoo.png","./run4/jupiter.png","./run4/together.png")
     print(" ")
 
-    # Handling run4 data
+    # Handling run5 data
     print("Plotting data from run5----------------------")
     dataplotter('./run_5/EARTHMOO.aei','./run_5/JUPITER.aei',"./run_5/earthmoo.png","./run_5/jupiter.png","./run_5/together.png")
     print(" ")
 
+    # Handling run6 data
+    print("Plotting data from run6----------------------")
+    dataplotter('./run_6/EARTHMOO.aei','./run_6/JUPITER.aei',"./run_6/earthmoo.png","./run_6/jupiter.png","./run_6/together.png")
+    print(" ")
+
+    '''
+    # Handling run7 data
+    print("Plotting data from run7----------------------")
+    dataplotter('./run_7/EARTHMOO.aei','./run_7/JUPITER.aei',"./run_7/earthmoo.png","./run_7/jupiter.png","./run_7/together.png")
+    print(" ")
+
+    '''
     run1_df = create_dataframe("./run1/EARTHMOO.aei")
     run2_df = create_dataframe("./run2/EARTHMOO.aei")
     run3_df = create_dataframe("./run3/EARTHMOO.aei")
@@ -138,7 +150,7 @@ def main():
     #plt.show()
     plt.savefig("all_Earth_e.png")
     plt.clf()
-
+    '''
 
 if __name__== "__main__":
     main()
