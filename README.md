@@ -3,17 +3,18 @@
 4 simulations were ran, each with different starting parameters for EARTHMOO and JUPITER. Simulations are ran for *10 million* years <br/>
 
 <br/>
-Simulations where Jupiter Eccentricity is changed are run_1(0.1), run_6(0.2), run_2(0.3), and run_7(0.5)
+Simulations where Jupiter Eccentricity is changed are run_1(0.1), run_6(0.2), run_2(0.3), run_9(0.4), and run_7(0.5)
 
 <br/>
-Simulations where Jupiter inclination is changed are run_3(30), and run_4(60)
+Simulations where Jupiter inclination is changed are run_10(15), run_3(30), run_8(45), and run_4(60)
 
 <br/>
 The Control run is run_5
 
 <br/>
-Currently running simulations are:
-<br/>
+Currently running simulations are:<br/>
+run_9<br/>
+run_10<br/>
 
 
 ## run1
@@ -170,3 +171,25 @@ Graphs of Eccentricity vs. Time <br/>
 ![Jupiter](./run_7/jupiter.png)
 <br/>
 ![together](./run_7/together.png)
+
+## run_8
+Initial conditions for EARTHMOO are:
+
+
+| a             | e             | i     |   peri   |  node   |   M  | mass |
+| ------------- |:-------------:| -----:|---------:|--------:|-----:|-----:|
+| 1.0           | 0.0           | 0.0   |  0.0     |  0.0.   |  101.564|9.121298E-06|
+
+
+Initial conditions for JUPITER are:
+
+| a             | e             | i     |   peri   |  node   |   M  | mass |
+| ------------- |:-------------:| -----:|---------:|--------:|-----:|-----:|
+| 5.20336       | 0.0           | 45.0   |  14.3310 |  0.0000| 20.0200| 9.547|
+
+Graphs of Eccentricity vs. Time <br/>
+![Earthmoo](./run_8/earthmoo.png)
+<br/>
+![Jupiter](./run_8/jupiter.png)
+<br/>
+![together](./run_8/together.png)

@@ -128,6 +128,11 @@ def main():
     dataplotter('./run_7/EARTHMOO.aei','./run_7/JUPITER.aei',"./run_7/earthmoo.png","./run_7/jupiter.png","./run_7/together.png")
     print(" ")
 
+    # Handling run8 data
+    print("Plotting data from run8----------------------")
+    dataplotter('./run_8/EARTHMOO.aei','./run_8/JUPITER.aei',"./run_8/earthmoo.png","./run_8/jupiter.png","./run_8/together.png")
+    print(" ")
+
     '''
     run1_df = create_dataframe("./run1/EARTHMOO.aei")
     run2_df = create_dataframe("./run2/EARTHMOO.aei")
