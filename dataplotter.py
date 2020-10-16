@@ -23,9 +23,6 @@ def create_dataframe(f_name):
     for element in header_line[2:]:
         header.append(element)
 
-
-
-
     # Turning data to float values and dataframe
     new_lines = []
     for l in lines:
@@ -114,6 +111,28 @@ def main():
     print("Plotting data from run4----------------------")
     dataplotter('./run4/EARTHMOO.aei','./run4/JUPITER.aei',"./run4/earthmoo.png","./run4/jupiter.png","./run4/together.png")
     print(" ")
+
+    run1_df = create_dataframe("./run1/EARTHMOO.aei")
+    run2_df = create_dataframe("./run2/EARTHMOO.aei")
+    run3_df = create_dataframe("./run3/EARTHMOO.aei")
+    run4_df = create_dataframe("./run4/EARTHMOO.aei")
+
+    #starting graph
+    fig, ax = subplots()
+
+    ax = run1_df.plot(x ='Time (years)', y='e', kind = 'line', color = 'blue', title = "Earth Sized Planets Eccentricities")
+    run2_df.plot(ax=ax, x ='Time (years)', y='e', kind = 'line', color = 'red')
+    run3_df.plot(ax=ax, x ='Time (years)', y='e', kind = 'line', color = 'green')
+    run4_df.plot(ax=ax, x ='Time (years)', y='e', kind = 'line', color = 'yellow')
+
+
+
+    ax.legend(["run1 e", "run2 e", "run3 e","run4 e"])
+    ax.set_ylabel("Eccentricity")
+    plt.tight_layout()
+    #plt.show()
+    plt.savefig("all_Earth_e.png")
+    plt.clf()
 
 
 if __name__== "__main__":
