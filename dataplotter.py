@@ -172,6 +172,29 @@ def main():
     plt.clf()
 
 
+    #print(run0_df)
+    ################################################
+    print("STUFFFFFFFFFFFF for e")
+    y = [run0_df['e'].mean(),run1_df['e'].mean(),run2_df['e'].mean(),run3_df['e'].mean(),run4_df['e'].mean(),run5_df['e'].mean()]
+    x = [0.0,0.1,0.2,0.3,0.4,0.5]
+    #Kozai Lidov mechanism
+    lower_error = [run0_df['e'].min(),run1_df['e'].min(),run2_df['e'].min(),run3_df['e'].min(),run4_df['e'].min(),run5_df['e'].min()]
+    print("Lower Error is ", lower_error)
+    upper_error = [run0_df['e'].max(),run1_df['e'].max(),run2_df['e'].max(),run3_df['e'].max(),run4_df['e'].max(),run5_df['e'].max()]
+    print("Upper Error is ", upper_error)
+
+    asymmetric_error = [lower_error, upper_error]
+    #plt.scatter(x,y)
+    plt.errorbar(x,y,yerr=asymmetric_error, fmt='o')
+    plt.title("Average of Earth Eccentricities vs Jupiter Eccentricity")
+    plt.xlabel("Jupiter Eccentricities")
+    plt.ylabel("Average of Earth Eccentricities")
+    #plt.show()
+    plt.savefig("averageswithej.png")
+    plt.clf()
+    ################################################
+
+
     # jupiter inclination changes
     run0_df = create_dataframe("./run_5/EARTHMOO.aei")
     run1_df = create_dataframe("./run_10/EARTHMOO.aei")
@@ -191,12 +214,31 @@ def main():
 
 
     ax.legend(["$i_j$ = 0","$i_j$ = 15", "$i_j$ = 30", "$i_j$ = 45","$i_j$ = 60"],bbox_to_anchor=(1.05, 1))#title='Jupiter Inclinations'
-    ax.set_ylabel("Inclination of Earth Sized Planet")
+    ax.set_ylabel("Eccentricity of Earth Sized Planet")
     plt.tight_layout()
     #plt.show()
     plt.savefig("all_Earth_e_i.png")
     plt.clf()
 
+
+    print("STUFFFFFFFFFFFF for i")
+    y = [run0_df['e'].mean(),run1_df['e'].mean(),run2_df['e'].mean(),run3_df['e'].mean(),run4_df['e'].mean()]
+    x = [0,15,30,45,60]
+    #Kozai Lidov mechanism
+    lower_error = [run0_df['e'].min(),run1_df['e'].min(),run2_df['e'].min(),run3_df['e'].min(),run4_df['e'].min()]
+    print("Lower Error is ", lower_error)
+    upper_error = [run0_df['e'].max(),run1_df['e'].max(),run2_df['e'].max(),run3_df['e'].max(),run4_df['e'].max()]
+    print("Upper Error is ", upper_error)
+
+    asymmetric_error = [lower_error, upper_error]
+    #plt.scatter(x,y)
+    plt.errorbar(x,y,yerr=asymmetric_error, fmt='o')
+    plt.title("Average of Earth Eccentricities vs Jupiter Eccentricity")
+    plt.xlabel("Jupiter Inclinations")
+    plt.ylabel("Average of Earth Eccentricities")
+    #plt.show()
+    plt.savefig("averageswithij.png")
+    plt.clf()
 
 if __name__== "__main__":
     main()
