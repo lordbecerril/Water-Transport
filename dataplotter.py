@@ -221,6 +221,40 @@ def main():
     plt.clf()
 
 
+    # jupiter distance changes
+    run0_df = create_dataframe("./run_11/EARTHMOO.aei")
+    run1_df = create_dataframe("./run_12/EARTHMOO.aei")
+    run2_df = create_dataframe("./run_5/EARTHMOO.aei")
+    run3_df = create_dataframe("./run_13/EARTHMOO.aei")
+    run4_df = create_dataframe("./run_14/EARTHMOO.aei")
+    run5_df = create_dataframe("./run_15/EARTHMOO.aei")
+
+
+    #starting graph
+    fig, ax = subplots()
+
+    ax = run0_df.plot(x ='Time (years)', y='e', kind = 'line', color = 'blue', title = "Earth Sized Planets Eccentricities Based on Jupiter Distance")
+    run1_df.plot(ax=ax, x ='Time (years)', y='e', kind = 'line', color = 'red')
+    run2_df.plot(ax=ax, x ='Time (years)', y='e', kind = 'line', color = 'green')
+    run3_df.plot(ax=ax, x ='Time (years)', y='e', kind = 'line', color = 'yellow')
+    run4_df.plot(ax=ax, x ='Time (years)', y='e', kind = 'line', color = 'm')
+    run5_df.plot(ax=ax, x ='Time (years)', y='e', kind = 'line', color = 'k')
+
+
+
+    ax.legend(["$a_j$ = 3.20336","$a_j$ = 4.20336", "$a_j$ = 5.20336", "$a_j$ = 6.20336","$a_j$ = 7.20336","$a_j$ = 8.20336"],bbox_to_anchor=(1.05, 1))#title='Jupiter Inclinations'
+    ax.set_ylabel("Eccentricity of Earth Sized Planet")
+    plt.tight_layout()
+    #plt.show()
+    plt.savefig("all_Earth_e_a.png")
+    plt.clf()
+
+
+
+
+
+
+
     print("STUFFFFFFFFFFFF for i")
     y = [run0_df['e'].mean(),run1_df['e'].mean(),run2_df['e'].mean(),run3_df['e'].mean(),run4_df['e'].mean()]
     x = [0,15,30,45,60]
