@@ -178,7 +178,7 @@ def main():
     y = [run0_df['e'].mean(),run1_df['e'].mean(),run2_df['e'].mean(),run3_df['e'].mean(),run4_df['e'].mean(),run5_df['e'].mean()]
     x = [0.0,0.1,0.2,0.3,0.4,0.5]
     #Kozai Lidov mechanism
-    lower_error = [run0_df['e'].min(),run1_df['e'].min(),run2_df['e'].min(),run3_df['e'].min(),run4_df['e'].min(),run5_df['e'].min()]
+    lower_error = [run0_df['e'].mean()-run0_df['e'].min(),run1_df['e'].mean()-run1_df['e'].min(),run2_df['e'].mean()-run2_df['e'].min(),run3_df['e'].mean()-run3_df['e'].min(),run4_df['e'].mean()-run4_df['e'].min(),run5_df['e'].mean()-run5_df['e'].min()]
     print("Lower Error is ", lower_error)
     upper_error = [run0_df['e'].max(),run1_df['e'].max(),run2_df['e'].max(),run3_df['e'].max(),run4_df['e'].max(),run5_df['e'].max()]
     print("Upper Error is ", upper_error)
@@ -221,7 +221,7 @@ def main():
     plt.clf()
 
 
-    # jupiter distance changes
+    # jupiter distance changes---------------------------------------------
     run0_df = create_dataframe("./run_11/EARTHMOO.aei")
     run1_df = create_dataframe("./run_12/EARTHMOO.aei")
     run2_df = create_dataframe("./run_5/EARTHMOO.aei")
@@ -249,7 +249,23 @@ def main():
     plt.savefig("all_Earth_e_a.png")
     plt.clf()
 
+    y = [run0_df['e'].mean(),run1_df['e'].mean(),run2_df['e'].mean(),run3_df['e'].mean(),run4_df['e'].mean(),run5_df['e'].mean()]
+    x = [3.20336,4.20336,5.20336,6.20336,7.20336,8.20336]
+    #Kozai Lidov mechanism
+    lower_error = [run0_df['e'].mean()-run0_df['e'].min(),run1_df['e'].mean()-run1_df['e'].min(),run2_df['e'].mean()-run2_df['e'].min(),run3_df['e'].mean()-run3_df['e'].min(),run4_df['e'].mean()-run4_df['e'].min(),run5_df['e'].mean()-run5_df['e'].min()]
+    print("Lower Error is ", lower_error)
+    upper_error = [run0_df['e'].max(),run1_df['e'].max(),run2_df['e'].max(),run3_df['e'].max(),run4_df['e'].max(),run5_df['e'].max()]
+    print("Upper Error is ", upper_error)
 
+    asymmetric_error = [lower_error, upper_error]
+    #plt.scatter(x,y)
+    plt.errorbar(x,y,yerr=asymmetric_error, fmt='o')
+    plt.title("Average of Earth Eccentricities vs Jupiter Eccentricity")
+    plt.xlabel("Jupiter Distances")
+    plt.ylabel("Average of Earth Eccentricities")
+    #plt.show()
+    plt.savefig("averageswithia.png")
+    plt.clf()
 
 
 
@@ -259,7 +275,7 @@ def main():
     y = [run0_df['e'].mean(),run1_df['e'].mean(),run2_df['e'].mean(),run3_df['e'].mean(),run4_df['e'].mean()]
     x = [0,15,30,45,60]
     #Kozai Lidov mechanism
-    lower_error = [run0_df['e'].min(),run1_df['e'].min(),run2_df['e'].min(),run3_df['e'].min(),run4_df['e'].min()]
+    lower_error = [run0_df['e'].mean()-run0_df['e'].min(),run1_df['e'].mean()-run1_df['e'].min(),run2_df['e'].mean()-run2_df['e'].min(),run3_df['e'].mean()-run3_df['e'].min(),run4_df['e'].mean()-run4_df['e'].min()]
     print("Lower Error is ", lower_error)
     upper_error = [run0_df['e'].max(),run1_df['e'].max(),run2_df['e'].max(),run3_df['e'].max(),run4_df['e'].max()]
     print("Upper Error is ", upper_error)
