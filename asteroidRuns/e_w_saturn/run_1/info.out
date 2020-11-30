@@ -1,0 +1,371 @@
+
+           Integration parameters
+           ----------------------
+
+   Algorithm: Hybrid symplectic integrator (mixed coordinates)
+
+   Integration start epoch:         2451179.5000000 days 
+   Integration stop  epoch:      3652451179.5000000
+   Output interval:                36525000.000
+   Output precision:                 medium
+
+   Initial timestep:                7.000 days 
+   Accuracy parameter:              1.0000E-12
+   Central mass:                    1.0000E+00 solar masses
+   J_2:                              0.0000E+00
+   J_4:                              0.0000E+00
+   J_6:                              0.0000E+00
+   Ejection distance:               1.0000E+02 AU
+   Radius of central body:          5.0000E-03 AU
+
+   Includes collisions:                 yes
+   Includes fragmentation:              no 
+   Includes relativity:                 no 
+   Includes user-defined force routine: no 
+
+   Number of Big bodies:        3
+   Number of Small bodies:   1000
+
+
+           Integration details
+           -------------------
+
+   Initial energy:           -3.29660E-08 solar masses AU^2 day^-2 
+   Initial angular momentum:  5.25412E-05 solar masses AU^2 day^-1 
+
+   Integrating massive bodies and particles up to the same epoch.
+
+   Beginning the main integration.
+
+ JUPITER  was hit by A678     at       5062369.4 days 
+ A418     ejected at      7549900.50000 days 
+ A364     ejected at      8207200.50000 days 
+ A936     ejected at      9369900.50000 days 
+ A15      ejected at     11280900.50000 days 
+ A280     ejected at     11379600.50000 days 
+ A139     ejected at     11991400.50000 days 
+ A652     ejected at     12072600.50000 days 
+ A36      ejected at     13976600.50000 days 
+ A993     ejected at     15750400.50000 days 
+ A811     ejected at     16285900.50000 days 
+ A423     ejected at     17656500.50000 days 
+ A210     ejected at     18318700.50000 days 
+ A232     ejected at     19543000.50000 days 
+ A361     ejected at     19574500.50000 days 
+ A619     ejected at     20198200.50000 days 
+ A989     ejected at     22844200.50000 days 
+ A521     ejected at     25216500.50000 days 
+ A875     ejected at     25290700.50000 days 
+ A699     ejected at     29687400.50000 days 
+ A924     ejected at     30764000.50000 days 
+ A555     ejected at     31214100.50000 days 
+ A607     ejected at     32455900.50000 days 
+ A642     ejected at     32536400.50000 days 
+ A265     ejected at     32658900.50000 days 
+ A129     ejected at     36501200.50000 days 
+ A390     ejected at     36690900.50000 days 
+ A909     ejected at     37110200.50000 days 
+ A439     ejected at     40185300.50000 days 
+ A368     ejected at     40486300.50000 days 
+ A787     ejected at     44320200.50000 days 
+ A441     ejected at     45734200.50000 days 
+ A228     ejected at     45813300.50000 days 
+ A286     ejected at     45905700.50000 days 
+ A964     ejected at     46200400.50000 days 
+ A713     ejected at     48312300.50000 days 
+ A437     ejected at     48978000.50000 days 
+ A795     ejected at     50017500.50000 days 
+ A941     ejected at     50588000.50000 days 
+ A928     ejected at     51043000.50000 days 
+ A522     ejected at     51502900.50000 days 
+ A817     ejected at     52114000.50000 days 
+ A847     ejected at     53182200.50000 days 
+ A334     ejected at     53990000.50000 days 
+ A285     ejected at     54419800.50000 days 
+ A9       ejected at     54582200.50000 days 
+ JUPITER  was hit by A548     at      54955041.8 days 
+ A366     ejected at     56209700.50000 days 
+ A845     ejected at     57275100.50000 days 
+ A387     ejected at     57339500.50000 days 
+ A974     ejected at     60336900.50000 days 
+ A533     ejected at     61302200.50000 days 
+ A865     ejected at     64469700.50000 days 
+ A772     ejected at     66474500.50000 days 
+ A739     ejected at     66685200.50000 days 
+ A809     ejected at     67449600.50000 days 
+ A535     ejected at     68603900.50000 days 
+ A879     ejected at     69464900.50000 days 
+ A951     ejected at     69897500.50000 days 
+ A977     ejected at     70248200.50000 days 
+ A467     ejected at     70478500.50000 days 
+ A752     ejected at     72220800.50000 days 
+ A544     ejected at     72809500.50000 days 
+ A162     ejected at     74116400.50000 days 
+ A562     ejected at     74133200.50000 days 
+ A206     ejected at     74536400.50000 days 
+ A319     ejected at     76217800.50000 days 
+ JUPITER  was hit by A588     at      76625638.2 days 
+ A860     ejected at     77706000.50000 days 
+ A677     ejected at     78931000.50000 days 
+ A170     ejected at     80041900.50000 days 
+ A593     ejected at     80805600.50000 days 
+ A793     ejected at     82844700.50000 days 
+ A886     ejected at     83580400.50000 days 
+ A664     ejected at     83938800.50000 days 
+ A757     ejected at     90318600.50000 days 
+ A637     ejected at     92931700.50000 days 
+ A173     ejected at     93598800.50000 days 
+ A190     ejected at     95974600.50000 days 
+ A496     ejected at     99856100.50000 days 
+ A414     ejected at    100253700.50000 days 
+ A80      ejected at    100462300.50000 days 
+ A915     ejected at    104678400.50000 days 
+ A32      ejected at    109455900.50000 days 
+ A398     ejected at    109546900.50000 days 
+ A691     ejected at    113443800.50000 days 
+ A134     ejected at    113604100.50000 days 
+ A988     ejected at    115116800.50000 days 
+ A839     ejected at    116987200.50000 days 
+ A848     ejected at    118983600.50000 days 
+ A717     ejected at    119780200.50000 days 
+ A425     ejected at    127931700.50000 days 
+ A971     ejected at    130804500.50000 days 
+ A269     ejected at    131401600.50000 days 
+ A443     ejected at    134159600.50000 days 
+ A958     ejected at    134637700.50000 days 
+ A419     ejected at    137080700.50000 days 
+ A449     ejected at    138082400.50000 days 
+ A70      ejected at    139619600.50000 days 
+ A179     ejected at    140440000.50000 days 
+ A253     ejected at    140798400.50000 days 
+ A275     ejected at    144268300.50000 days 
+ A113     ejected at    147388200.50000 days 
+ A892     ejected at    148086100.50000 days 
+ A491     ejected at    148169400.50000 days 
+ A508     ejected at    151903200.50000 days 
+ A96      collided with the central body at    152464713.23783 days 
+ A823     ejected at    155739900.50000 days 
+ A258     ejected at    158294900.50000 days 
+ A828     ejected at    158418100.50000 days 
+ A799     ejected at    162373100.50000 days 
+ A26      ejected at    163185100.50000 days 
+ A564     ejected at    164175600.50000 days 
+ A579     ejected at    164795800.50000 days 
+ A445     collided with the central body at    166405352.85678 days 
+ A10      ejected at    168252400.50000 days 
+ A226     ejected at    168946100.50000 days 
+ A197     ejected at    176079100.50000 days 
+ A138     ejected at    178848300.50000 days 
+ A753     ejected at    179542700.50000 days 
+ A369     ejected at    180356100.50000 days 
+ A329     ejected at    181648300.50000 days 
+ A919     ejected at    182795600.50000 days 
+ A594     ejected at    186545500.50000 days 
+ A65      ejected at    186792600.50000 days 
+ A492     ejected at    188720400.50000 days 
+ A683     ejected at    190498400.50000 days 
+ A582     ejected at    190876400.50000 days 
+ A842     ejected at    191730400.50000 days 
+ A982     ejected at    192578800.50000 days 
+ A199     ejected at    192906400.50000 days 
+ A266     ejected at    193420200.50000 days 
+ A296     ejected at    195729500.50000 days 
+ A649     ejected at    196582800.50000 days 
+ A264     ejected at    199242800.50000 days 
+ A215     ejected at    205762600.50000 days 
+ A394     ejected at    209994100.50000 days 
+ A638     ejected at    218091000.50000 days 
+ A595     ejected at    226146600.50000 days 
+ A109     ejected at    229085900.50000 days 
+ A525     ejected at    233986600.50000 days 
+ A905     ejected at    235905300.50000 days 
+ A837     ejected at    236137000.50000 days 
+ A824     ejected at    249172400.50000 days 
+ A956     ejected at    252019300.50000 days 
+ A25      collided with the central body at    272907772.54430 days 
+ A797     ejected at    276251900.50000 days 
+ A155     ejected at    284783500.50000 days 
+ A946     ejected at    285487000.50000 days 
+ A234     collided with the central body at    294766426.90588 days 
+ A494     ejected at    295889700.50000 days 
+ A999     ejected at    296548400.50000 days 
+ A587     ejected at    299742500.50000 days 
+ A601     ejected at    303321600.50000 days 
+ A152     ejected at    309005600.50000 days 
+ JUPITER  was hit by A733     at     312561524.7 days 
+ A146     ejected at    313810400.50000 days 
+ A976     ejected at    320707500.50000 days 
+ A411     ejected at    326302600.50000 days 
+ A545     ejected at    326325700.50000 days 
+ A192     ejected at    328335400.50000 days 
+ A604     ejected at    335857600.50000 days 
+ A859     ejected at    337353500.50000 days 
+ A655     ejected at    346649500.50000 days 
+ A686     ejected at    354292100.50000 days 
+ A472     ejected at    360583700.50000 days 
+ A633     ejected at    360802100.50000 days 
+ A355     ejected at    373306900.50000 days 
+ A658     ejected at    378813800.50000 days 
+ A802     ejected at    380462300.50000 days 
+ A667     ejected at    386288400.50000 days 
+ A529     ejected at    386525700.50000 days 
+ A693     ejected at    388741900.50000 days 
+ A378     ejected at    390358900.50000 days 
+ JUPITER  was hit by A55      at     392160556.5 days 
+ A750     collided with the central body at    408351301.49837 days 
+ A354     ejected at    418008900.50000 days 
+ A466     ejected at    431397100.50000 days 
+ A153     ejected at    441599600.50000 days 
+ A745     ejected at    443427300.50000 days 
+ A518     ejected at    452663800.50000 days 
+ A775     ejected at    455063400.50000 days 
+ A238     ejected at    458142700.50000 days 
+ A613     ejected at    458973600.50000 days 
+ A304     ejected at    460685100.50000 days 
+ JUPITER  was hit by A446     at     462050876.4 days 
+ A292     ejected at    476293000.50000 days 
+ A157     ejected at    492378300.50000 days 
+ A698     ejected at    509552100.50000 days 
+ A217     ejected at    509985400.50000 days 
+ A168     ejected at    511023500.50000 days 
+ A916     ejected at    525882400.50000 days 
+ A647     ejected at    526300300.50000 days 
+ A983     ejected at    533119000.50000 days 
+ A577     ejected at    533289800.50000 days 
+ A314     collided with the central body at    535170076.25099 days 
+ A509     ejected at    539281800.50000 days 
+ A660     ejected at    542629900.50000 days 
+ A469     ejected at    548123500.50000 days 
+ A923     ejected at    548151500.50000 days 
+ A295     ejected at    556510900.50000 days 
+ A114     ejected at    565969300.50000 days 
+ A249     ejected at    573996900.50000 days 
+ A104     ejected at    587346600.50000 days 
+ A756     ejected at    589140000.50000 days 
+ A871     ejected at    600109700.50000 days 
+ A440     ejected at    601404000.50000 days 
+ A571     ejected at    603054600.50000 days 
+ A259     ejected at    603373800.50000 days 
+ A856     ejected at    606343200.50000 days 
+ A803     ejected at    619893800.50000 days 
+ A327     ejected at    632788500.50000 days 
+ A584     collided with the central body at    639208554.89942 days 
+ A211     ejected at    646341900.50000 days 
+ A105     ejected at    665587000.50000 days 
+ A151     ejected at    670591300.50000 days 
+ A203     ejected at    675469600.50000 days 
+ A714     ejected at    685707100.50000 days 
+ A570     ejected at    686533800.50000 days 
+ A635     ejected at    692947200.50000 days 
+ A349     ejected at    698004000.50000 days 
+ A907     ejected at    709503600.50000 days 
+ A685     ejected at    710631300.50000 days 
+ A317     collided with the central body at    711411098.74403 days 
+ A774     ejected at    713691000.50000 days 
+ A743     ejected at    720271700.50000 days 
+ A117     ejected at    723715700.50000 days 
+ A870     ejected at    734592300.50000 days 
+ A874     ejected at    739109400.50000 days 
+ A91      ejected at    748824000.50000 days 
+ A309     ejected at    790607000.50000 days 
+ JUPITER  was hit by A543     at     799251504.8 days 
+ A12      ejected at    835025500.50000 days 
+ A814     ejected at    836029300.50000 days 
+ A92      ejected at    845400200.50000 days 
+ A736     ejected at    850345000.50000 days 
+ A377     ejected at    850802800.50000 days 
+ A578     ejected at    863327900.50000 days 
+ A64      ejected at    864663500.50000 days 
+ A389     ejected at    869578900.50000 days 
+ A73      ejected at    899238600.50000 days 
+ A56      ejected at    900429300.50000 days 
+ A350     ejected at    901743200.50000 days 
+ A786     ejected at    917642300.50000 days 
+ A506     ejected at    919708700.50000 days 
+ A69      collided with the central body at    927754870.97730 days 
+ A503     ejected at    934464000.50000 days 
+ A952     collided with the central body at    937256564.21308 days 
+ A979     ejected at    938332900.50000 days 
+ A180     ejected at    956985800.50000 days 
+ A400     ejected at    969679600.50000 days 
+ A46      ejected at    974007700.50000 days 
+ A81      collided with the central body at    975231132.47345 days 
+ A985     ejected at    989863400.50000 days 
+ A230     ejected at   1001722800.50000 days 
+ A479     ejected at   1008754300.50000 days 
+ A767     ejected at   1011193100.50000 days 
+ A461     ejected at   1017694000.50000 days 
+ A663     ejected at   1021819800.50000 days 
+ A954     ejected at   1046414300.50000 days 
+ A537     ejected at   1048925900.50000 days 
+ A404     ejected at   1063070800.50000 days 
+ A108     ejected at   1114147000.50000 days 
+ A8       ejected at   1115750700.50000 days 
+ A493     ejected at   1146295200.50000 days 
+ A302     ejected at   1146917500.50000 days 
+ EARTHMOO was hit by A920     at    1162681780.5 days 
+ A186     ejected at   1164680700.50000 days 
+ A779     collided with the central body at   1169408764.95038 days 
+ A273     collided with the central body at   1176303006.11290 days 
+ A960     ejected at   1231222000.50000 days 
+ A318     ejected at   1231341700.50000 days 
+ A610     ejected at   1244305000.50000 days 
+ EARTHMOO was hit by A111     at    1264400779.8 days 
+ A561     ejected at   1267784400.50000 days 
+ A90      ejected at   1280709200.50000 days 
+ EARTHMOO was hit by A749     at    1307451459.3 days 
+ A373     ejected at   1334157700.50000 days 
+ A836     ejected at   1387472500.50000 days 
+ A251     ejected at   1387485100.50000 days 
+ A937     ejected at   1406733000.50000 days 
+ A840     ejected at   1412959500.50000 days 
+ A933     ejected at   1416177400.50000 days 
+ A822     ejected at   1422610400.50000 days 
+ A608     ejected at   1431716000.50000 days 
+ A965     collided with the central body at   1434413106.22186 days 
+ A325     ejected at   1559502400.50000 days 
+ A906     ejected at   1579666600.50000 days 
+ A514     ejected at   1585426900.50000 days 
+ A474     ejected at   1616896100.50000 days 
+ A884     ejected at   1637191900.50000 days 
+ A169     collided with the central body at   1641964479.81108 days 
+ A704     ejected at   1645066200.50000 days 
+ A987     ejected at   1691916500.50000 days 
+ A88      ejected at   1698283700.50000 days 
+ A670     collided with the central body at   1703596335.17443 days 
+ A227     ejected at   1723643300.50000 days 
+ A631     ejected at   1743287400.50000 days 
+ A644     ejected at   1805880700.50000 days 
+ A261     ejected at   1911526100.50000 days 
+ A490     ejected at   1932337800.50000 days 
+ A773     collided with the central body at   2022177977.20336 days 
+ A43      ejected at   2042419800.50000 days 
+ A148     ejected at   2092271700.50000 days 
+ A606     ejected at   2110476600.50000 days 
+ A910     collided with the central body at   2176737887.09363 days 
+ A164     ejected at   2185205800.50000 days 
+ A254     ejected at   2253284300.50000 days 
+ A549     collided with the central body at   2259003482.91642 days 
+ A723     ejected at   2269555100.50000 days 
+ A948     ejected at   2289500900.50000 days 
+ A13      collided with the central body at   2300447484.28978 days 
+ A788     ejected at   2301284000.50000 days 
+ A486     ejected at   2465746200.50000 days 
+ EARTHMOO was hit by A221     at    2598444124.1 days 
+ A504     ejected at   2729256300.50000 days 
+ A940     ejected at   2733550800.50000 days 
+ A742     ejected at   3140710000.50000 days 
+ A623     ejected at   3202193100.50000 days 
+ A67      ejected at   3289261900.50000 days 
+ EARTHMOO was hit by A342     at    3357216538.5 days 
+ A551     collided with the central body at   3368774950.86080 days 
+ A873     ejected at   3383696100.50000 days 
+ A972     ejected at   3386372900.50000 days 
+
+   Integration complete.
+
+   Fractional energy change due to integrator:   1.49883E-08
+   Fractional angular momentum change:           4.22050E-12
+
+   Fractional energy change due to collisions/ejections:  0.00000E+00
+   Fractional angular momentum change:                    0.00000E+00
