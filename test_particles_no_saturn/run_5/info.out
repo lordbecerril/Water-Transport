@@ -1,0 +1,67 @@
+
+           Integration parameters
+           ----------------------
+
+   Algorithm: Hybrid symplectic integrator (mixed coordinates)
+
+   Integration start epoch:         2451179.5000000 days 
+   Integration stop  epoch:      3652451179.5000000
+   Output interval:                36525000.000
+   Output precision:                 medium
+
+   Initial timestep:                7.000 days 
+   Accuracy parameter:              1.0000E-12
+   Central mass:                    1.0000E+00 solar masses
+   J_2:                              0.0000E+00
+   J_4:                              0.0000E+00
+   J_6:                              0.0000E+00
+   Ejection distance:               1.0000E+02 AU
+   Radius of central body:          5.0000E-03 AU
+
+   Includes collisions:                 yes
+   Includes fragmentation:              no 
+   Includes relativity:                 no 
+   Includes user-defined force routine: no 
+
+   Number of Big bodies:        2
+   Number of Small bodies:   1000
+
+
+           Integration details
+           -------------------
+
+   Initial energy:           -2.84998E-08 solar masses AU^2 day^-2 
+   Initial angular momentum:  3.76043E-05 solar masses AU^2 day^-1 
+
+   Integrating massive bodies and particles up to the same epoch.
+
+   Beginning the main integration.
+
+ A537     ejected at     40960200.50000 days 
+ A269     ejected at     62537700.50000 days 
+ JUPITER  was hit by A418     at     137502172.4 days 
+ A264     ejected at    149640100.50000 days 
+ A387     ejected at    155864500.50000 days 
+ A988     ejected at    158456600.50000 days 
+ A993     ejected at    171012500.50000 days 
+ JUPITER  was hit by A652     at     172842716.1 days 
+ JUPITER  was hit by A366     at     276357947.1 days 
+ JUPITER  was hit by A364     at     420091243.7 days 
+ A419     ejected at    682685200.50000 days 
+ A26      ejected at    792891800.50000 days 
+ A232     ejected at    994430200.50000 days 
+ A210     ejected at   1004030000.50000 days 
+ A875     ejected at   1243365600.50000 days 
+ JUPITER  was hit by A15      at    1445623903.1 days 
+ JUPITER  was hit by A916     at    2166772140.5 days 
+ A787     ejected at   2307710700.50000 days 
+ JUPITER  was hit by A793     at    2515345035.3 days 
+ A280     ejected at   3107432700.50000 days 
+
+   Integration complete.
+
+   Fractional energy change due to integrator:   9.22145E-09
+   Fractional angular momentum change:           3.71027E-12
+
+   Fractional energy change due to collisions/ejections:  0.00000E+00
+   Fractional angular momentum change:                    0.00000E+00
