@@ -7,9 +7,10 @@ Simulations where Jupiter Eccentricity is changed are run_1(0.1), run_6(0.2), ru
 
 <br/>
 Simulations where Jupiter inclination is changed are run_10(15), run_3(30), run_8(45), and run_4(60)
-
 <br/>
-The Control run is run_5
+Simulations where Jupiter Distance is changed are run_11(3.20336 au), run_12(4.20336 au), run_13(6.20336), run_14(7.20336), and run_15(8.20336)
+<br/>
+The Control run is run_5: a=5.20336, e = 0.0, i = 0.0
 
 <br/>
 Currently running simulations are:<br/>
