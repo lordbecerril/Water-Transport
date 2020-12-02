@@ -1,0 +1,65 @@
+
+           Integration parameters
+           ----------------------
+
+   Algorithm: Hybrid symplectic integrator (mixed coordinates)
+
+   Integration start epoch:         2451179.5000000 days 
+   Integration stop  epoch:      3652451179.5000000
+   Output interval:                36525000.000
+   Output precision:                 medium
+
+   Initial timestep:                7.000 days 
+   Accuracy parameter:              1.0000E-12
+   Central mass:                    1.0000E+00 solar masses
+   J_2:                              0.0000E+00
+   J_4:                              0.0000E+00
+   J_6:                              0.0000E+00
+   Ejection distance:               1.0000E+02 AU
+   Radius of central body:          5.0000E-03 AU
+
+   Includes collisions:                 yes
+   Includes fragmentation:              no 
+   Includes relativity:                 no 
+   Includes user-defined force routine: no 
+
+   Number of Big bodies:        3
+   Number of Small bodies:    100
+
+
+           Integration details
+           -------------------
+
+   Initial energy:           -2.30560E-08 solar masses AU^2 day^-2 
+   Initial angular momentum:  6.23006E-05 solar masses AU^2 day^-1 
+
+   Integrating massive bodies and particles up to the same epoch.
+
+   Beginning the main integration.
+
+ A52      ejected at     21400800.50000 days 
+ A10      ejected at     31096500.50000 days 
+ A5       ejected at     48141500.50000 days 
+ SATURN   ejected at     54962300.50000 days 
+ A32      ejected at     73508800.50000 days 
+ A46      ejected at     74644200.50000 days 
+ A27      ejected at    109443300.50000 days 
+ A15      ejected at    112560400.50000 days 
+ A9       ejected at    191191400.50000 days 
+ A36      collided with the central body at    310391275.89073 days 
+ A78      ejected at    332941400.50000 days 
+ A3       ejected at    427208300.50000 days 
+ A57      ejected at    540273700.50000 days 
+ A30      ejected at    553885900.50000 days 
+ A56      ejected at    624628600.50000 days 
+ A100     ejected at    679645100.50000 days 
+ A40      ejected at    812098400.50000 days 
+ A73      ejected at   2049764900.50000 days 
+
+   Integration complete.
+
+   Fractional energy change due to integrator:   5.63707E-08
+   Fractional angular momentum change:           6.81684E-12
+
+   Fractional energy change due to collisions/ejections:  3.18222E-02
+   Fractional angular momentum change:                    3.26433E-01

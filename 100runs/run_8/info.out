@@ -1,0 +1,142 @@
+
+           Integration parameters
+           ----------------------
+
+   Algorithm: Hybrid symplectic integrator (mixed coordinates)
+
+   Integration start epoch:         2451179.5000000 days 
+   Integration stop  epoch:      3652451179.5000000
+   Output interval:                36525000.000
+   Output precision:                 medium
+
+   Initial timestep:                7.000 days 
+   Accuracy parameter:              1.0000E-12
+   Central mass:                    1.0000E+00 solar masses
+   J_2:                              0.0000E+00
+   J_4:                              0.0000E+00
+   J_6:                              0.0000E+00
+   Ejection distance:               1.0000E+02 AU
+   Radius of central body:          5.0000E-03 AU
+
+   Includes collisions:                 yes
+   Includes fragmentation:              no 
+   Includes relativity:                 no 
+   Includes user-defined force routine: no 
+
+   Number of Big bodies:        3
+   Number of Small bodies:    100
+
+
+           Integration details
+           -------------------
+
+   Initial energy:           -3.29666E-08 solar masses AU^2 day^-2 
+   Initial angular momentum:  4.95985E-05 solar masses AU^2 day^-1 
+
+   Integrating massive bodies and particles up to the same epoch.
+
+   Beginning the main integration.
+
+ A65      ejected at      2710800.50000 days 
+ A32      ejected at      2969100.50000 days 
+ JUPITER  was hit by A3       at       3023763.9 days 
+ A56      ejected at      3398900.50000 days 
+ A10      collided with the central body at      3912150.05673 days 
+ A52      ejected at      4375400.50000 days 
+ A1       ejected at      4571400.50000 days 
+ A88      ejected at      4664500.50000 days 
+ A30      collided with the central body at      4780965.45971 days 
+ A49      collided with the central body at      5544976.00847 days 
+ A37      ejected at      5612300.50000 days 
+ A73      ejected at      6042800.50000 days 
+ A19      ejected at      6531400.50000 days 
+ A64      ejected at      6635000.50000 days 
+ A26      ejected at      7825700.50000 days 
+ A80      ejected at      8013300.50000 days 
+ A27      collided with the central body at      8712308.19401 days 
+ A36      collided with the central body at      8835912.87003 days 
+ A16      collided with the central body at      8945576.50811 days 
+ A70      ejected at     10398900.50000 days 
+ A61      collided with the central body at     12799516.69737 days 
+ A23      ejected at     14068300.50000 days 
+ A87      ejected at     17386300.50000 days 
+ A59      ejected at     18147900.50000 days 
+ A91      ejected at     18301200.50000 days 
+ A40      ejected at     19680900.50000 days 
+ A92      ejected at     19937100.50000 days 
+ A100     ejected at     20171600.50000 days 
+ A11      ejected at     20978000.50000 days 
+ A21      ejected at     22522200.50000 days 
+ A15      ejected at     24909900.50000 days 
+ A42      ejected at     29569100.50000 days 
+ A71      ejected at     29994700.50000 days 
+ A2       ejected at     30712200.50000 days 
+ A78      collided with the central body at     36426999.58349 days 
+ A53      collided with the central body at     38729670.33404 days 
+ A76      ejected at     39537800.50000 days 
+ A81      ejected at     44897000.50000 days 
+ A75      ejected at     51417500.50000 days 
+ A46      ejected at     51934800.50000 days 
+ A45      ejected at     52937900.50000 days 
+ A9       ejected at     60299100.50000 days 
+ A39      collided with the central body at     60881943.87012 days 
+ A12      ejected at     61866400.50000 days 
+ A60      ejected at     76026700.50000 days 
+ A96      collided with the central body at     88204369.33556 days 
+ A8       ejected at     92275800.50000 days 
+ A13      ejected at     94756600.50000 days 
+ A35      ejected at     96308500.50000 days 
+ A90      ejected at    104600000.50000 days 
+ A20      collided with the central body at    113126404.72071 days 
+ A85      collided with the central body at    119654124.97194 days 
+ A48      collided with the central body at    120288421.49725 days 
+ A97      ejected at    138633300.50000 days 
+ A54      collided with the central body at    138751608.87098 days 
+ A31      ejected at    140072500.50000 days 
+ A69      ejected at    145614400.50000 days 
+ A89      collided with the central body at    149280945.81357 days 
+ A94      collided with the central body at    150547572.70771 days 
+ A72      collided with the central body at    152115308.23618 days 
+ SATURN   ejected at    153276600.50000 days 
+ A77      ejected at    174933200.50000 days 
+ A18      ejected at    178769900.50000 days 
+ A25      ejected at    179833200.50000 days 
+ A55      ejected at    184831900.50000 days 
+ A79      ejected at    186508400.50000 days 
+ A34      ejected at    190304500.50000 days 
+ A57      ejected at    192653000.50000 days 
+ A24      ejected at    207196900.50000 days 
+ A47      collided with the central body at    212267319.41253 days 
+ A7       collided with the central body at    220265244.93420 days 
+ A82      collided with the central body at    220320331.90948 days 
+ A43      ejected at    221549000.50000 days 
+ A50      collided with the central body at    223508368.51527 days 
+ A66      ejected at    234383500.50000 days 
+ A62      collided with the central body at    252687883.36817 days 
+ A28      collided with the central body at    293082412.53012 days 
+ A93      ejected at    314786900.50000 days 
+ A86      ejected at    324220800.50000 days 
+ A83      ejected at    356257700.50000 days 
+ A14      ejected at    372759500.50000 days 
+ A63      ejected at    380109500.50000 days 
+ A44      collided with the central body at    432036448.64013 days 
+ A99      ejected at    436981000.50000 days 
+ A41      ejected at    474817400.50000 days 
+ A29      ejected at    476400800.50000 days 
+ A51      collided with the central body at    500691539.68354 days 
+ A74      collided with the central body at    556332346.85605 days 
+ A17      ejected at    557141600.50000 days 
+ A33      ejected at    563909200.50000 days 
+ A38      ejected at    581889400.50000 days 
+ A98      collided with the central body at    724951627.28832 days 
+ A68      collided with the central body at    938279323.85977 days 
+ A58      ejected at   1140984300.50000 days 
+ A84      collided with the central body at   1186839738.93762 days 
+
+   Integration complete.
+
+   Fractional energy change due to integrator:   5.35827E-08
+   Fractional angular momentum change:           1.42064E-11
+
+   Fractional energy change due to collisions/ejections:  2.17458E-02
+   Fractional angular momentum change:                    3.17849E-01
