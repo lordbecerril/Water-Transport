@@ -1,0 +1,16 @@
+#PBS -o output.txt
+#PBS -e error.txt
+#PBS -N run8_500
+#PBS -l walltime=744:00:00
+#PBS -l mem=12gb
+#PBS -l nodes=1:ppn=12
+#PBS -m bea
+#PBS -M becere1@unlv.nevada.edu
+
+
+
+
+
+cd /storage/martinlab/becere1/500runs/run_8
+./mercury6 
+

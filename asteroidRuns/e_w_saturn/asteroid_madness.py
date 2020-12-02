@@ -6,6 +6,10 @@ from matplotlib.pyplot import *
 import pandas as pd
 from pandas import *
 
+Ea = 1.00000 # Earth Semi Major axis
+Ja = 5.20336 # Jupiter Semi Major Axis
+Sa = 9.53707 # Saturn Semi Major axis
+
 def create_dataframe(f_name,skip):
     # Open the FileName
     f = open(f_name,'r')
@@ -78,6 +82,10 @@ def rm_the_planets(df):
             df.drop(index, inplace=True)
     return(df)
 
+def mean_motion_calc(p, q, ap):
+    dummy = p/(p+q)
+    dummy = dummy**(2/3)
+    return(dummy*ap)
 
 
 def main():
@@ -98,14 +106,48 @@ def main():
 
     print(elementout)
 
+
+
     ax = elementout.plot(kind='scatter',x='a',y='e',color='red',s=5)
 
 
     ax.set_xlabel("Semi-Major Axis")
     ax.set_ylabel("Eccentricity")
-    plt.axvline(x = 1.00001) #Earths spot after 10 million years
 
-    plt.axvline(x = 2.05, c = 'g', label = "v_6") #Earths spot after 10 million years
+    plt.axvline(x = 2.05, c = 'k', linestyle='--',label = "$v_6$ = 2.05au") #Earths spot after 10 million years
+    #plt.text(1.75,0.9,'$v_{6}$',rotation=90)
+
+    # Mean Motion Resonances 3:1, 5:2, 7:3 and 2:1
+    # 3:1 first
+    ar = mean_motion_calc(1, 2, Ja)
+    print("3:1 is")
+    print(ar)
+    plt.axvline(x = ar, c = 'b', linestyle='--',label = "3:1 = "+ str(round(ar, 2))+"au") #Earths spot after 10 million years
+    #plt.text((ar+0.1),0.9,'3:1',rotation=90)
+
+    # 5:2
+    ar = mean_motion_calc(2, 3, Ja)
+    print("5:2 is")
+    print(ar)
+    plt.axvline(x = ar, c = 'm', linestyle='--',label = "5:2 = "+ str(round(ar, 2))+"au") #Earths spot after 10 million years
+    #plt.text((ar+0.1),0.9,'5:2',rotation=90)
+
+    # 7:3
+    ar = mean_motion_calc(3, 4, Ja)
+    print("7:3 is")
+    print(ar)
+    plt.axvline(x = ar, c = 'y', linestyle='--',label = "7:3 = "+ str(round(ar, 2))+"au" ) #Earths spot after 10 million years
+    #plt.text((ar+0.1),0.9,'5:2',rotation=90)
+
+    # 2:1
+    ar = mean_motion_calc(1, 1, Ja)
+    print("2:1 is")
+    print(ar)
+    plt.axvline(x = ar, c = 'c', linestyle='--',label = "2:1 = "+ str(round(ar, 2))+"au") #Earths spot after 10 million years
+    #plt.text((ar+0.1),0.9,'5:2',rotation=90)
+
+
+    plt.legend(loc=0)
 
 
     plt.show()
