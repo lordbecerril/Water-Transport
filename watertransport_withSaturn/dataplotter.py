@@ -94,22 +94,22 @@ def main():
     '''
     # Handling run1 data
     print("Plotting data from run1----------------------")
-    dataplotter('./run1/EARTHMOO.aei','./run1/JUPITER.aei',"./run1/earthmoo.png","./run1/jupiter.png","./run1/together.png")
+    dataplotter('./run_1/EARTHMOO.aei','./run_1/JUPITER.aei',"./run_1/earthmoo.png","./run_1/jupiter.png","./run_1/together.png")
     print(" ")
 
     # Handling run2 data
     print("Plotting data from run2----------------------")
-    dataplotter('./run2/EARTHMOO.aei','./run2/JUPITER.aei',"./run2/earthmoo.png","./run2/jupiter.png","./run2/together.png")
+    dataplotter('./run_2/EARTHMOO.aei','./run_2/JUPITER.aei',"./run_2/earthmoo.png","./run_2/jupiter.png","./run_2/together.png")
     print(" ")
 
     # Handling run3 data
     print("Plotting data from run3----------------------")
-    dataplotter('./run3/EARTHMOO.aei','./run3/JUPITER.aei',"./run3/earthmoo.png","./run3/jupiter.png","./run3/together.png")
+    dataplotter('./run_3/EARTHMOO.aei','./run_3/JUPITER.aei',"./run_3/earthmoo.png","./run_3/jupiter.png","./run_3/together.png")
     print(" ")
 
     # Handling run4 data
     print("Plotting data from run4----------------------")
-    dataplotter('./run4/EARTHMOO.aei','./run4/JUPITER.aei',"./run4/earthmoo.png","./run4/jupiter.png","./run4/together.png")
+    dataplotter('./run_4/EARTHMOO.aei','./run_4/JUPITER.aei',"./run_4/earthmoo.png","./run_4/jupiter.png","./run_4/together.png")
     print(" ")
 
     # Handling run5 data
@@ -155,7 +155,7 @@ def main():
     #starting graph
     fig, ax = plt.subplots(figsize=(7,2))
 
-    ax = run0_df.plot(x ='Time (years)', y='e', kind = 'line', color = 'blue', title = "Earth Sized Planets Eccentricities Based on Jupiter Eccentricities")
+    ax = run0_df.plot(x ='Time (years)', y='e', kind = 'line', color = 'blue', title = "$e_E$ vs Time")
     run1_df.plot(ax=ax, x ='Time (years)', y='e', kind = 'line', color = 'red')
     run2_df.plot(ax=ax, x ='Time (years)', y='e', kind = 'line', color = 'green')
     run3_df.plot(ax=ax, x ='Time (years)', y='e', kind = 'line', color = 'yellow')
@@ -165,7 +165,7 @@ def main():
 
 
     ax.legend(["$e_j$ = 0.0","$e_j$ = 0.1", "$e_j$ = 0.2", "$e_j$ = 0.3","$e_j$ = 0.4","$e_j$ = 0.5"],bbox_to_anchor=(1.05, 1))#,title='Jupiter Eccentricities'
-    ax.set_ylabel("Eccentricity")
+    ax.set_ylabel("$e_E$")
     plt.tight_layout()
     #plt.show()
     plt.savefig("./all_Earth_e.png")
@@ -186,9 +186,9 @@ def main():
     asymmetric_error = [lower_error, upper_error]
     #plt.scatter(x,y)
     plt.errorbar(x,y,yerr=asymmetric_error, fmt='o')
-    plt.title("Average of Earth Eccentricities vs Jupiter Eccentricity")
-    plt.xlabel("Jupiter Eccentricities")
-    plt.ylabel("Average of Earth Eccentricities")
+    plt.title("$e_E$ vs $e_J$")
+    plt.xlabel("$e_J$")
+    plt.ylabel("$e_E$")
     #plt.show()
     plt.savefig("./averageswithej.png")
     plt.clf()
@@ -205,7 +205,7 @@ def main():
     #starting graph
     fig, ax = subplots()
 
-    ax = run0_df.plot(x ='Time (years)', y='e', kind = 'line', color = 'blue', title = "Earth Sized Planets Eccentricities Based on Jupiter Inclinations")
+    ax = run0_df.plot(x ='Time (years)', y='e', kind = 'line', color = 'blue', title = "$e_E$ vs Time")
     run1_df.plot(ax=ax, x ='Time (years)', y='e', kind = 'line', color = 'red')
     run2_df.plot(ax=ax, x ='Time (years)', y='e', kind = 'line', color = 'green')
     run3_df.plot(ax=ax, x ='Time (years)', y='e', kind = 'line', color = 'yellow')
@@ -213,11 +213,31 @@ def main():
 
 
 
-    ax.legend(["$i_j$ = 0","$i_j$ = 15", "$i_j$ = 30", "$i_j$ = 45","$i_j$ = 60"],bbox_to_anchor=(1.05, 1))#title='Jupiter Inclinations'
-    ax.set_ylabel("Eccentricity of Earth Sized Planet")
+    ax.legend(["$i_j$ = 0","$i_j$ = 15", "$i_j$ = 30", "$i_j$ = 45","$i_j$ = 60"],bbox_to_anchor=(1.20, 1))#title='Jupiter Inclinations'
+    ax.set_ylabel("$e_E$")
     plt.tight_layout()
+    plt.show()
+    plt.savefig("all_Earth_e_i.png")
+    plt.clf()
+
+
+    print("STUFFFFFFFFFFFF for i")
+    y = [run0_df['e'].mean(),run1_df['e'].mean(),run2_df['e'].mean(),run3_df['e'].mean(),run4_df['e'].mean()]
+    x = [0,15,30,45,60]
+    #Kozai Lidov mechanism
+    lower_error = [run0_df['e'].mean()-run0_df['e'].min(),run1_df['e'].mean()-run1_df['e'].min(),run2_df['e'].mean()-run2_df['e'].min(),run3_df['e'].mean()-run3_df['e'].min(),run4_df['e'].mean()-run4_df['e'].min()]
+    print("Lower Error is ", lower_error)
+    upper_error = [run0_df['e'].max(),run1_df['e'].max(),run2_df['e'].max(),run3_df['e'].max(),run4_df['e'].max()-0.6]
+    print("Upper Error is ", upper_error)
+
+    asymmetric_error = [lower_error, upper_error]
+    #plt.scatter(x,y)
+    plt.errorbar(x,y,yerr=asymmetric_error, fmt='o')
+    plt.title("$e_E$ vs $i_J$")
+    plt.xlabel("$i_J$")
+    plt.ylabel("$e_E$")
     #plt.show()
-    plt.savefig("./all_Earth_e_i.png")
+    plt.savefig("./averageswithij.png")
     plt.clf()
 
 
@@ -233,7 +253,7 @@ def main():
     #starting graph
     fig, ax = subplots()
 
-    ax = run0_df.plot(x ='Time (years)', y='e', kind = 'line', color = 'blue', title = "Earth Sized Planets Eccentricities Based on Jupiter Distance")
+    ax = run0_df.plot(x ='Time (years)', y='e', kind = 'line', color = 'blue', title = "$e_E$ vs Time")
     run1_df.plot(ax=ax, x ='Time (years)', y='e', kind = 'line', color = 'red')
     run2_df.plot(ax=ax, x ='Time (years)', y='e', kind = 'line', color = 'green')
     run3_df.plot(ax=ax, x ='Time (years)', y='e', kind = 'line', color = 'yellow')
@@ -243,7 +263,7 @@ def main():
 
 
     ax.legend(["$a_j$ = 3.20336","$a_j$ = 4.20336", "$a_j$ = 5.20336", "$a_j$ = 6.20336","$a_j$ = 7.20336","$a_j$ = 8.20336"],bbox_to_anchor=(1.05, 1))#title='Jupiter Inclinations'
-    ax.set_ylabel("Eccentricity of Earth Sized Planet")
+    ax.set_ylabel("$e_E$")
     plt.tight_layout()
     #plt.show()
     plt.savefig("./all_Earth_e_a.png")
@@ -260,9 +280,9 @@ def main():
     asymmetric_error = [lower_error, upper_error]
     #plt.scatter(x,y)
     plt.errorbar(x,y,yerr=asymmetric_error, fmt='o')
-    plt.title("Average of Earth Distance vs Jupiter Distance")
-    plt.xlabel("Jupiter Distances")
-    plt.ylabel("Average of Earth Distance")
+    plt.title("$e_E$ vs $a_J$")
+    plt.xlabel("$a_J$")
+    plt.ylabel("$e_E$")
     #plt.show()
     plt.savefig("./averageswithia.png")
     plt.clf()
@@ -271,24 +291,7 @@ def main():
 
 
 
-    print("STUFFFFFFFFFFFF for i")
-    y = [run0_df['e'].mean(),run1_df['e'].mean(),run2_df['e'].mean(),run3_df['e'].mean(),run4_df['e'].mean()]
-    x = [0,15,30,45,60]
-    #Kozai Lidov mechanism
-    lower_error = [run0_df['e'].mean()-run0_df['e'].min(),run1_df['e'].mean()-run1_df['e'].min(),run2_df['e'].mean()-run2_df['e'].min(),run3_df['e'].mean()-run3_df['e'].min(),run4_df['e'].mean()-run4_df['e'].min()]
-    print("Lower Error is ", lower_error)
-    upper_error = [run0_df['e'].max(),run1_df['e'].max(),run2_df['e'].max(),run3_df['e'].max(),run4_df['e'].max()]
-    print("Upper Error is ", upper_error)
 
-    asymmetric_error = [lower_error, upper_error]
-    #plt.scatter(x,y)
-    plt.errorbar(x,y,yerr=asymmetric_error, fmt='o')
-    plt.title("Average of Earth Inclination vs Jupiter Inclination")
-    plt.xlabel("Jupiter Inclinations")
-    plt.ylabel("Average of Earth Inclinations")
-    #plt.show()
-    plt.savefig("./averageswithij.png")
-    plt.clf()
 
 if __name__== "__main__":
     main()

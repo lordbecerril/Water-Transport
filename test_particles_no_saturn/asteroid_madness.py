@@ -117,7 +117,7 @@ def main():
     plt.axvline(x = 1, c = 'g', label = "$a_E$ = 1.0001au") #Earths spot after 10 million years
     #plt.text(1.75,0.9,'$v_{6}$',rotation=90)
 
-    plt.axvline(x = 2.05, c = 'k', linestyle='--',label = "$v_6$ = 2.05au") #Earths spot after 10 million years
+    #plt.axvline(x = 2.05, c = 'k', linestyle='--',label = "$v_6$ = 2.05au") #Earths spot after 10 million years
     #plt.text(1.75,0.9,'$v_{6}$',rotation=90)
 
     # Mean Motion Resonances 3:1, 5:2, 7:3 and 2:1

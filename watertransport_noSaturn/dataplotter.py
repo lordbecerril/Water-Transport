@@ -155,7 +155,7 @@ def main():
     #starting graph
     fig, ax = plt.subplots(figsize=(7,2))
 
-    ax = run0_df.plot(x ='Time (years)', y='e', kind = 'line', color = 'blue', title = "Earth Sized Planets Eccentricities Based on Jupiter Eccentricities")
+    ax = run0_df.plot(x ='Time (years)', y='e', kind = 'line', color = 'blue', title = "$e_E$ vs Time")
     run1_df.plot(ax=ax, x ='Time (years)', y='e', kind = 'line', color = 'red')
     run2_df.plot(ax=ax, x ='Time (years)', y='e', kind = 'line', color = 'green')
     run3_df.plot(ax=ax, x ='Time (years)', y='e', kind = 'line', color = 'yellow')
@@ -165,10 +165,10 @@ def main():
 
 
     ax.legend(["$e_j$ = 0.0","$e_j$ = 0.1", "$e_j$ = 0.2", "$e_j$ = 0.3","$e_j$ = 0.4","$e_j$ = 0.5"],bbox_to_anchor=(1.05, 1))#,title='Jupiter Eccentricities'
-    ax.set_ylabel("Eccentricity")
+    ax.set_ylabel("$e_E$")
     plt.tight_layout()
     #plt.show()
-    plt.savefig("all_Earth_e.png")
+    plt.savefig("./all_Earth_e.png")
     plt.clf()
 
 
@@ -186,11 +186,11 @@ def main():
     asymmetric_error = [lower_error, upper_error]
     #plt.scatter(x,y)
     plt.errorbar(x,y,yerr=asymmetric_error, fmt='o')
-    plt.title("Average of Earth Eccentricities vs Jupiter Eccentricity")
-    plt.xlabel("Jupiter Eccentricities")
-    plt.ylabel("Average of Earth Eccentricities")
+    plt.title("$e_E$ vs $e_J$")
+    plt.xlabel("$e_J$")
+    plt.ylabel("$e_E$")
     #plt.show()
-    plt.savefig("averageswithej.png")
+    plt.savefig("./averageswithej.png")
     plt.clf()
     ################################################
 
@@ -205,7 +205,7 @@ def main():
     #starting graph
     fig, ax = subplots()
 
-    ax = run0_df.plot(x ='Time (years)', y='e', kind = 'line', color = 'blue', title = "Earth Sized Planets Eccentricities Based on Jupiter Inclinations")
+    ax = run0_df.plot(x ='Time (years)', y='e', kind = 'line', color = 'blue', title = "$e_E$ vs Time")
     run1_df.plot(ax=ax, x ='Time (years)', y='e', kind = 'line', color = 'red')
     run2_df.plot(ax=ax, x ='Time (years)', y='e', kind = 'line', color = 'green')
     run3_df.plot(ax=ax, x ='Time (years)', y='e', kind = 'line', color = 'yellow')
@@ -214,10 +214,30 @@ def main():
 
 
     ax.legend(["$i_j$ = 0","$i_j$ = 15", "$i_j$ = 30", "$i_j$ = 45","$i_j$ = 60"],bbox_to_anchor=(1.05, 1))#title='Jupiter Inclinations'
-    ax.set_ylabel("Eccentricity of Earth Sized Planet")
+    ax.set_ylabel("$e_E$")
     plt.tight_layout()
     #plt.show()
     plt.savefig("all_Earth_e_i.png")
+    plt.clf()
+
+
+    print("STUFFFFFFFFFFFF for i")
+    y = [run0_df['e'].mean(),run1_df['e'].mean(),run2_df['e'].mean(),run3_df['e'].mean(),run4_df['e'].mean()]
+    x = [0,15,30,45,60]
+    #Kozai Lidov mechanism
+    lower_error = [run0_df['e'].mean()-run0_df['e'].min(),run1_df['e'].mean()-run1_df['e'].min(),run2_df['e'].mean()-run2_df['e'].min(),run3_df['e'].mean()-run3_df['e'].min(),run4_df['e'].mean()-run4_df['e'].min()]
+    print("Lower Error is ", lower_error)
+    upper_error = [run0_df['e'].max(),run1_df['e'].max(),run2_df['e'].max(),run3_df['e'].max(),run4_df['e'].max()]
+    print("Upper Error is ", upper_error)
+
+    asymmetric_error = [lower_error, upper_error]
+    #plt.scatter(x,y)
+    plt.errorbar(x,y,yerr=asymmetric_error, fmt='o')
+    plt.title("$e_E$ vs $i_J$")
+    plt.xlabel("$i_J$")
+    plt.ylabel("$e_E$")
+    #plt.show()
+    plt.savefig("./averageswithij.png")
     plt.clf()
 
 
@@ -233,7 +253,7 @@ def main():
     #starting graph
     fig, ax = subplots()
 
-    ax = run0_df.plot(x ='Time (years)', y='e', kind = 'line', color = 'blue', title = "Earth Sized Planets Eccentricities Based on Jupiter Distance")
+    ax = run0_df.plot(x ='Time (years)', y='e', kind = 'line', color = 'blue', title = "$e_E$ vs Time")
     run1_df.plot(ax=ax, x ='Time (years)', y='e', kind = 'line', color = 'red')
     run2_df.plot(ax=ax, x ='Time (years)', y='e', kind = 'line', color = 'green')
     run3_df.plot(ax=ax, x ='Time (years)', y='e', kind = 'line', color = 'yellow')
@@ -243,10 +263,10 @@ def main():
 
 
     ax.legend(["$a_j$ = 3.20336","$a_j$ = 4.20336", "$a_j$ = 5.20336", "$a_j$ = 6.20336","$a_j$ = 7.20336","$a_j$ = 8.20336"],bbox_to_anchor=(1.05, 1))#title='Jupiter Inclinations'
-    ax.set_ylabel("Eccentricity of Earth Sized Planet")
+    ax.set_ylabel("$e_E$")
     plt.tight_layout()
     #plt.show()
-    plt.savefig("all_Earth_e_a.png")
+    plt.savefig("./all_Earth_e_a.png")
     plt.clf()
 
     y = [run0_df['e'].mean(),run1_df['e'].mean(),run2_df['e'].mean(),run3_df['e'].mean(),run4_df['e'].mean(),run5_df['e'].mean()]
@@ -260,35 +280,18 @@ def main():
     asymmetric_error = [lower_error, upper_error]
     #plt.scatter(x,y)
     plt.errorbar(x,y,yerr=asymmetric_error, fmt='o')
-    plt.title("Average of Earth Eccentricities vs Jupiter Eccentricity")
-    plt.xlabel("Jupiter Distances")
-    plt.ylabel("Average of Earth Eccentricities")
+    plt.title("$e_E$ vs $a_J$")
+    plt.xlabel("$a_J$")
+    plt.ylabel("$e_E$")
     #plt.show()
-    plt.savefig("averageswithia.png")
+    plt.savefig("./averageswithia.png")
     plt.clf()
 
 
 
 
 
-    print("STUFFFFFFFFFFFF for i")
-    y = [run0_df['e'].mean(),run1_df['e'].mean(),run2_df['e'].mean(),run3_df['e'].mean(),run4_df['e'].mean()]
-    x = [0,15,30,45,60]
-    #Kozai Lidov mechanism
-    lower_error = [run0_df['e'].mean()-run0_df['e'].min(),run1_df['e'].mean()-run1_df['e'].min(),run2_df['e'].mean()-run2_df['e'].min(),run3_df['e'].mean()-run3_df['e'].min(),run4_df['e'].mean()-run4_df['e'].min()]
-    print("Lower Error is ", lower_error)
-    upper_error = [run0_df['e'].max(),run1_df['e'].max(),run2_df['e'].max(),run3_df['e'].max(),run4_df['e'].max()]
-    print("Upper Error is ", upper_error)
 
-    asymmetric_error = [lower_error, upper_error]
-    #plt.scatter(x,y)
-    plt.errorbar(x,y,yerr=asymmetric_error, fmt='o')
-    plt.title("Average of Earth Eccentricities vs Jupiter Eccentricity")
-    plt.xlabel("Jupiter Inclinations")
-    plt.ylabel("Average of Earth Eccentricities")
-    #plt.show()
-    plt.savefig("averageswithij.png")
-    plt.clf()
 
 if __name__== "__main__":
     main()

@@ -6,7 +6,7 @@ from matplotlib.pyplot import *
 import pandas as pd
 from pandas import *
 
-Ea = 1.00000 # Earth Semi Major axis
+Ea = 0.97094 # Earth Semi Major axis
 Ja = 5.20336 # Jupiter Semi Major Axis
 Sa = 9.53707 # Saturn Semi Major axis
 
@@ -109,12 +109,13 @@ def main():
 
 
     ax = elementout.plot(kind='scatter',x='a',y='e',color='red',s=5)
-
+    # ax.Axes(xscale=[0,7])
+    ax.set_xlim([0,5])
 
     ax.set_xlabel("Semi-Major Axis")
     ax.set_ylabel("Eccentricity")
 
-    plt.axvline(x = 1, c = 'g', label = "$a_E$ = 1.0001au") #Earths spot after 10 million years
+    plt.axvline(x = 1, c = 'g', label = "$a_E$ = "+ str(round(Ea, 2))+"au") #Earths spot after 10 million years
     #plt.text(1.75,0.9,'$v_{6}$',rotation=90)
 
     plt.axvline(x = 2.05, c = 'k', linestyle='--',label = "$v_6$ = 2.05au") #Earths spot after 10 million years
